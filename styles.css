@@ -14,21 +14,56 @@ body {
 }
 
 #home,
-#porfolio,
-#contact {
+#portfolio,
+#contact,
+.footer {
   background-color: red;
 }
 
 .navigation,
-.intro {
-  background-color: green;
-}
-
+.student-name,
+.navigation-menu,
+.intro,
+.card,
+.card-image,
+.card-heading,
+.card-text,
+.footer-name,
+.footer-navigation,
+.contact-heading,
+.contact-content,
+.contact-phone,
+.contact-email,
 .intro-text,
 .intro-image {
+  background-color: green;
+  min-height: auto;
+  font-size: 1rem;
+}
+
+.student-name,
+.navigation-menu,
+.intro-text,
+.intro-image,
+.card-image,
+.card-heading,
+.card-text {
   background-color: orange;
 }
 
-.card {
-  background-color: green;
+.navigation,
+.footer,
+.intro {
+  display: flex;
+  min-height: auto;
+}
+
+.student-name,
+.navigation-menu,
+.footer-name,
+.footer-navigation,
+.intro-text,
+.intro-image {
+  width: 50%;
+  min-height: auto;
 }
