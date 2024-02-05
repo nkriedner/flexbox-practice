@@ -10,7 +10,13 @@ body {
   font-size: 3rem;
   color: white; /* so the text is visible on the colored backgrounds */
   text-align: center;
-  width: 320px; /* to see the mobile view */
+
+  /* to see the mobile view */
+  /* width: 320px;  */
+
+  /* to see the tablet view */
+  width: 768px;
+
   margin: auto; /* to center the mobile */
 }
 
@@ -37,7 +43,8 @@ body {
 .contact-phone,
 .contact-email,
 .footer-name,
-.footer-navigation {
+.footer-nav-mobile,
+.footer-nav-tablet {
   background-color: green;
   min-height: auto;
   font-size: 1rem;
@@ -55,30 +62,69 @@ body {
 }
 
 /* CYAN COLOR BOXES */
-.navigation-link {
+.navigation-link,
+.footer-nav-link {
   background-color: cyan;
   color: black;
 }
 
 /* FLEX CONTAINER */
-.footer,
-.intro {
+.intro,
+.footer {
   display: flex;
-  min-height: auto;
+}
+
+.intro {
+  flex-direction: column;
 }
 
 /* FLEX ITEMS */
 .footer-name,
-.footer-navigation,
-.intro-text,
-.intro-image {
+.footer-nav-mobile {
   width: 50%;
-  min-height: auto;
+}
+
+/* HIDE footer-navigation-tablet */
+.footer-nav-tablet {
+  display: none;
 }
 
 /* ************* */
 /* MEDIA QUERIES */
 /* ************* */
 @media screen and (min-width: 768px) {
-  /* Code for tablet size here... */
+  .navigation-menu {
+    display: flex;
+    justify-content: center;
+  }
+  .intro {
+    flex-direction: row-reverse;
+  }
+  .intro-image,
+  .intro-text,
+  .card {
+    width: 50%;
+  }
+  #portfolio {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  .card {
+    flex-basis: 45%;
+    flex-grow: 1;
+  }
+  .footer {
+    justify-content: space-between;
+  }
+  .footer-name {
+    width: auto;
+  }
+  /* hide footer-nav-mobile */
+  .footer-nav-mobile {
+    display: none;
+  }
+  /* show footer-nav-tablet */
+  .footer-nav-tablet {
+    display: flex; /* to show the footer-nav-tablet + to create a flex container */
+  }
 }
