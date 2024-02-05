@@ -2,7 +2,8 @@
   padding: 0.3rem;
   margin: 0.3rem;
   box-sizing: border-box;
-  min-height: 200px; /* every element on the page becomes visible */
+  /* min-height: 200px;  */
+  /* every element on the page becomes visible */
 }
 
 body {
@@ -53,8 +54,13 @@ body {
   background-color: orange;
 }
 
+/* CYAN COLOR BOXES */
+.navigation-link {
+  background-color: cyan;
+  color: black;
+}
+
 /* FLEX CONTAINER */
-.navigation,
 .footer,
 .intro {
   display: flex;
@@ -62,12 +68,17 @@ body {
 }
 
 /* FLEX ITEMS */
-.student-name,
-.navigation-menu,
 .footer-name,
 .footer-navigation,
 .intro-text,
 .intro-image {
   width: 50%;
   min-height: auto;
+}
+
+/* ************* */
+/* MEDIA QUERIES */
+/* ************* */
+@media screen and (min-width: 768px) {
+  /* Code for tablet size here... */
 }
