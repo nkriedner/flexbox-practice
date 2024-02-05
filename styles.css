@@ -20,27 +20,29 @@ body {
   background-color: red;
 }
 
+/* GREEN BOXES */
 .navigation,
 .student-name,
 .navigation-menu,
 .intro,
+.intro-text,
+.intro-image,
 .card,
 .card-image,
 .card-heading,
 .card-text,
-.footer-name,
-.footer-navigation,
 .contact-heading,
 .contact-content,
 .contact-phone,
 .contact-email,
-.intro-text,
-.intro-image {
+.footer-name,
+.footer-navigation {
   background-color: green;
   min-height: auto;
   font-size: 1rem;
 }
 
+/* ORANGE BOXES */
 .student-name,
 .navigation-menu,
 .intro-text,
@@ -51,6 +53,7 @@ body {
   background-color: orange;
 }
 
+/* FLEX CONTAINER */
 .navigation,
 .footer,
 .intro {
@@ -58,6 +61,7 @@ body {
   min-height: auto;
 }
 
+/* FLEX ITEMS */
 .student-name,
 .navigation-menu,
 .footer-name,
